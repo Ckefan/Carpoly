@@ -4,19 +4,13 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    info:[
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-      {},
-    ]
+    Carousel:[//轮播图
+      "https://gdp.alicdn.com/imgextra/i2/1776379036/TB2VT0psf5TBuNjSspcXXbnGFXa_!!1776379036.jpg",
+      "https://gdp.alicdn.com/imgextra/i3/1776379036/TB2S7I5rYSYBuNjSspiXXXNzpXa_!!1776379036.jpg"
+    ],
   },
   //事件处理函数
   bindViewTap: function() {

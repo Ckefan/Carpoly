@@ -1,0 +1,14 @@
+<view class="search">
+  <view class="search-input">
+    <icon type="search" size="22" color="" />
+    <input class="input" type="text" placeholder="搜索所有商品" auto-focus />
+  </view>
+</view>
+<view class="main">
+  <view class="menu">
+    
+  </view>
+  <view class="shop">
+    
+  </view>
+</view>
