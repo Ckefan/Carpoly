@@ -6,9 +6,47 @@
 </view>
 <view class="main">
   <view class="menu">
-    
+    <scroll-view scroll-y>
+      <block wx:for="{{info}}" wx:key="index">
+        <view class="menu-item {{current==index?'current':''}}" data-index="{{index}}" catchtap="selectMenu">
+          <view class="text">
+            <!-- <image  class="discount" src="" /> -->
+            {{item.name}}
+          </view>
+        </view>
+      </block>
+    </scroll-view>
   </view>
   <view class="shop">
-    
+      <scroll-view scroll-y>
+          <blcok wx:for="{{info[current].list}}" wx:key="index">
+            <view class="shop-item">
+              <view class="icon">
+                <image class="icon-img"src="{{item.img}}" />
+              </view>
+              <view class="conent">
+                <view class="title">
+                  {{item.title}}
+                </view>
+                <view class="extra">
+                  <text class="onSale" wx:if="{{item.onSale}}">
+                    月售：{{item.onSale}}
+                  </text>
+                  <text class="comment" wx:if="{{item.comment}}">
+                    好评度：{{item.comment}}
+                  </text>
+                </view>
+                <view class="price">
+                  <text class="new">￥{{item.price}}</text>
+                  <text class="lod"></text>
+                </view>
+                
+              </view>
+              <view class="shopping-cart" catchtap="addCart">
+                <image class="icon" src="../../images/shopping.png" />
+              </view>
+            </view>
+          </blcok>
+      </scroll-view>
   </view>
 </view>

@@ -12,8 +12,13 @@
 
 page{
   font-size: 28rpx;
-  --bgColor : rgb(236, 235, 235);
+  --bgColor : #f3f5f7;/*商品类型背景*/
+  --bgWhite : #fff;   /*商品白色背景*/
+  --word : #7e848b;   /*商品文字*/
 }
 .slide-image{
   width: 100%;
 } 
+.hidden{
+  display: none !important;
+}
